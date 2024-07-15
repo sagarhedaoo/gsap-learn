@@ -15,41 +15,26 @@ const Hero = () => {
   //       rotate: 360,
   //     });
   //   });
-  const container = useRef();
+  //   const container = useRef();
 
-  useGSAP(
-    () => {
-      gsap.from(".box", {
-        rotate: 360,
-        scale: 0,
-        duration: 1,
-        opacity: 0,
-        delay: 0.5,
-      });
-    },
-    { scope: container }
-  );
+  //   useGSAP(
+  //     () => {
+  //       gsap.from(".box", {
+  //         rotate: 360,
+  //         scale: 0,
+  //         duration: 1,
+  //         opacity: 0,
+  //         delay: 0.5,
+  //       });
+  //     },
+  //     { scope: container }
+  //   );
 
   return (
-    <main className="h-full w-full bg-black flex justify-evenly items-center p-[20px]">
-      <div
-        ref={container}
-        className="container1 p-[20px] border-2 border-white rounded-lg"
-      >
-        <div className="circle h-[300px] w-[300px] rounded-full bg-gradient-to-r from-white to-blue-700 m-[20px]"></div>
-        <div
-          ref={gsapRef}
-          className="box h-[300px] w-[300px] rounded-lg bg-gradient-to-r from-red-400 to-red-600 m-[20px]"
-        ></div>
-      </div>
-      <div className="container2 p-[20px] border-2 border-white rounded-lg">
-        <div className="circle h-[300px] w-[300px] rounded-full bg-gradient-to-r from-white to-blue-700 m-[20px]"></div>
-        <div
-          //   ref={gsapRef}
-          className="box h-[300px] w-[300px] rounded-lg bg-gradient-to-r from-red-400 to-red-600 m-[20px]"
-        ></div>
-      </div>
-    </main>
+    <div className="flex justify-between items-center">
+      <div className="border w-full p-6 m-5  border-black">Left Column</div>
+      <div className="border w-full p-6 m-5 border-black">Right Column</div>
+    </div>
   );
 };
 
