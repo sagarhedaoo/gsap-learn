@@ -1,9 +1,13 @@
+//Glass SVG
+
 const GlassSVG = () => (
   <svg
     viewBox="0 0 64 64"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     stroke="#000000"
+
+    
   >
     <defs>
       <linearGradient id="brownGradient" x1="0%" y1="100%" x2="0%" y2="70%">
